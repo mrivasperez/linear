@@ -1,5 +1,5 @@
 # linear: A fun page where you can draw fun lines with your cursor.
-by mrivasperez live demo: <mr>
+by mrivasperez live demo: <https://mrivasperez.github.io/linear/>
 
 ## Screenshot
 ![A screenshot of linear open on a mac](assets/screenshot.png)
