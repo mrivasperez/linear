@@ -1,0 +1,31 @@
+body {
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+
+.square {
+    background-color: #1d1d1d;
+    margin: 2px;
+    width: 16px;
+    height: 16px;
+    box-shadow: 0 0 2px black;
+    transition: 2.5s ease;
+}
+
+.square:hover{
+    transition-duration: 0s;
+}
