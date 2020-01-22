@@ -28,15 +28,20 @@ for(let i = 0; i < SQUARES_NUM; i++){
 function setColorToEl(element){
     //generate a random color
     const color = getRandomColor();
+    //change square bcg color to random color
     element.style.background = color;
+    //change box shadow to be that of color
     element.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`;
 }
 
 function removeColorFromEl(element){
+    //revert square bcg
     element.style.background = '#1d1d1d';
+    //revert box shadow to none
     element.style.boxShadow = `0 0 2px black`;
 }
 
 function getRandomColor(){
+    //get a new random color from array length
     return colors[Math.floor(Math.random() * colors.length)];
 }
