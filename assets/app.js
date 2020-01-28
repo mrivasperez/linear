@@ -11,7 +11,7 @@ for(let i = 0; i < SQUARES_NUM; i++){
     const square = document.createElement('div');
     //add class of square to that new div
     square.classList.add('square');
-    //react to hover
+    //react to hover by getting random calor
     square.addEventListener('mouseover', () => {
         setColorToEl(square);
     })
@@ -19,28 +19,28 @@ for(let i = 0; i < SQUARES_NUM; i++){
     square.addEventListener('mouseout', () => {
         removeColorFromEl(square);
     })
-
+    //add the square
     container.appendChild(square);
 
 }
 
-
+//generate random color on mouseover
 function setColorToEl(element){
-    //generate a random color
+    // call function to generate a random color
     const color = getRandomColor();
     //change square bcg color to random color
     element.style.background = color;
     //change box shadow to be that of color
     element.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`;
 }
-
+//remove color after mouseover
 function removeColorFromEl(element){
     //revert square bcg
     element.style.background = '#1d1d1d';
     //revert box shadow to none
     element.style.boxShadow = `0 0 2px black`;
 }
-
+// generate random color
 function getRandomColor(){
     //get a new random color from array length
     return colors[Math.floor(Math.random() * colors.length)];
